@@ -1,0 +1,6 @@
+baseURL = "https://thugrabbit.github.io/"
+languageCode = "zh-cn"
+title = "ThugRabbit 's blog"
+
+[params]
+description = "Technology, project and daily idea"

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ .Site.Title }}</h1>
+        <p>{{ .Site.Params.description }}</p>
+    </header>
+
+    <main>
+        <h2>文章</h2>
+
+        {{ range .Site.RegularPages }}
+        <article>
+            <h3>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            <time>{{ .Date.Format "2006-01-02" }}</time>
+            <p>{{ .Summary }}</p>
+        </article>
+        {{ else }}
+        <p>目前还没有文章。</p>
+        {{ end }}
+    </main>
+</body>
+</html>
