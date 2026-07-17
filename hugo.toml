@@ -4,3 +4,7 @@ title = "ThugRabbit 's blog"
 
 [params]
 description = "Technology, project and daily idea"
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
